@@ -16,7 +16,19 @@
 
     /* Linting */
     "strict": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+    "baseUrl": ".",
+
+    "paths": {
+
+      "@/*": ["./src/*", "./dist/*", ""],
+
+      "routes/*": ["./src/routes/*"],
+
+      "services/*": ["./src/services/*"]
+
+    },
+
   },
   "include": ["src"],
   "references": [{ "path": "./tsconfig.node.json" }]
